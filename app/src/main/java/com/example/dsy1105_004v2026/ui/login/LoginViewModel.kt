@@ -29,7 +29,7 @@ class LoginViewModel (
         uiState=uiState.copy(isLoading = false)
 
         if(ok) onSuccess(uiState.username.trim())
-        else uiState=uiState.copy(error("Credenciales incorrectas"))
+        else uiState=uiState.copy(error="Credenciales incorrectas")
 
 
 
